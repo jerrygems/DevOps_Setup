@@ -1,5 +1,6 @@
-#ssh-keygen -t rsa -b 2048 -C "jerrygems" -N "your_password_here"
-#ssh-keygen -t rsa -b 2048 -C "ansible" -N "no_pass_for_passwordless_connection"
+sudo docker build -t dock2 ./docker/ssh_container/
+ssh-keygen -t rsa -b 2048 -C "jerrygems" -N "jerrygems@private"
+ssh-keygen -t rsa -b 2048 -C "ansible" -N ""
 tmux set -g mouse on
 tmux split-window -h
 tmux select-pane -t 0
