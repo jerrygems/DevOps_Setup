@@ -13,5 +13,5 @@ tmux send-keys -t 2 "clear;sudo docker run -it dock2" C-m
 tmux send-keys -t 3 "clear;sudo docker run -it dock2" C-m
 
 # copying the public keys to the hosts so that connection becomes easier
-ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.17.0.2
+ssh-copy-id -i ~/.ssh/ansible.pub root@172.17.0.2
 ssh-copy-id -i ~/.ssh/ansible.pub root@172.17.0.3
